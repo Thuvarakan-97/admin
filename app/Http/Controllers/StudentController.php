@@ -11,9 +11,10 @@ use App\Models\department;
 
 class StudentController extends Controller
 {
-    public $alldepartment=[];
+    public $alldepartment = [];
 
-    public function mount(){
+    public function mount()
+    {
         $this->alldepartment = department::all();
     }
 
@@ -39,12 +40,12 @@ class StudentController extends Controller
 
     public function create()
     {
+        $departments = department::all();
+        return view('student.add', compact('departments'));
 
-            $departments = department::all();
-            return view('student.add', compact('departments'));
-
-        // return view('student.add');
     }
+
+
 
 
 
@@ -54,7 +55,7 @@ class StudentController extends Controller
             'StudentName' => 'required',
             'email' => 'required|email',
             'contact_no' => 'required',
-            // 'departmentID' => 'required',
+            'departmentID' => 'required',
         ]);
 
         $student = new Student();
@@ -74,7 +75,7 @@ class StudentController extends Controller
     public function destroy(Student $students)
     {
         $students->delete();
-        flash()->success('Success','students Record has been Deleted successfully !');
+        flash()->success('Success', 'students Record has been Deleted successfully !');
         return redirect()->route('students.index')->with('success');
     }
 }

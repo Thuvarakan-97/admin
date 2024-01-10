@@ -4,7 +4,7 @@ use App\Http\Controllers\DepartmentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FingerDevicesControlller;
 use App\Http\Controllers\StudentController;
-
+use App\Http\Controllers\AttendancesController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,9 +16,9 @@ Auth::routes(['register' => false, 'reset' => false]);
 Route::group(['middleware' => ['auth', 'Role'], 'roles' => ['admin']], function () {
     Route::resource('/employees', '\App\Http\Controllers\EmployeeController');
     Route::resource('/employees', '\App\Http\Controllers\EmployeeController');
-    Route::get('/attendance', '\App\Http\Controllers\AttendanceController@index')->name('attendance');
+    // Route::get('/attendance', '\App\Http\Controllers\AttendanceController@index')->name('attendance');
 
-    Route::get('/latetime', '\App\Http\Controllers\AttendanceController@indexLatetime')->name('indexLatetime');
+    // Route::get('/latetime', '\App\Http\Controllers\AttendanceController@indexLatetime')->name('indexLatetime');
     Route::get('/leave', '\App\Http\Controllers\LeaveController@index')->name('leave');
     Route::get('/overtime', '\App\Http\Controllers\LeaveController@indexOvertime')->name('indexOvertime');
 
@@ -92,5 +92,9 @@ Route::post('/students/store', [StudentController::class, 'store'])->name('stude
 Route::get('/departments', [DepartmentController::class, 'index'])->name('departments.index');
 Route::get('/departments/create', [DepartmentController::class, 'create'])->name('departments.create');
 Route::post('/departments/store', [DepartmentController::class, 'store'])->name('departments.store');
+
+
+
+Route::get('/attendance', [AttendancesController::class, 'index'])->name('attendance.index');
 
 

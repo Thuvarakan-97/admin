@@ -43,5 +43,5 @@
 @endsection
 
 @section('script')
-    <!-- Add your additional scripts here -->
+
 @endsection

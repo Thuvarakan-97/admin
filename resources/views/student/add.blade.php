@@ -4,6 +4,8 @@
         <div class="modal-content">
 
 
+
+
             <div class="modal-header">
             <h5 class="modal-title"><b>Add New Student</b></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -20,28 +22,28 @@
                     <form method="POST" action="{{ route('students.store') }}">
                         @csrf
                         <div class="form-group">
-                            <label for="StudentName">Name <i>{without any space}</i></label>
+                            <label for="StudentName">Name </label>
                             <input type="text" class="form-control" placeholder="Student Name" id="StudentName" name="StudentName"
                                 required />
                         </div>
                         <div class="form-group">
-                            <label for="contact_no">contact_no <i>{without any space}</i></label>
+                            <label for="contact_no">contact_no </i></label>
                             <input type="text" class="form-control" placeholder="Enter contact_no " id="contact_no" name="contact_no"
                                 required />
                         </div>
 
-
                         <div class="form-group">
                             <label for="email" class="col-sm-3 control-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email">
+                            <input type="email" class="form-control" placeholder="Enter E-Mail " id="email" name="email">
                         </div>
+
+
 
                         {{-- <div class="form-group">
                             <label for="departmentID">Department</label>
-                            <select class="form-control" id="departmentID" name="departmentID" required>
-                                <option value="" selected>- Select Department -</option>
+                            <select class="form-control" id="departmentID" name="departmentID">
                                 @foreach($departments as $department)
-                                    <option value="{{$department->id}}">{{$department->DepartmentName}}</option>
+                                    <option value="{{ $department->id }}">{{ $department->DepartmentName }}</option>
                                 @endforeach
                             </select>
                         </div> --}}

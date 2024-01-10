@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('css')
-    <!-- Add your additional CSS here -->
+   
 @endsection
 
 @section('breadcrumb')
@@ -62,5 +62,5 @@
 @endsection
 
 @section('script')
-    <!-- Add your additional scripts here -->
+
 @endsection

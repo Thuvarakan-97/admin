@@ -32,6 +32,7 @@
 
                                 <th data-priority="1">Name</th>
                                 <th data-priority="2">Email</th>
+                                <th data-priority="2">Contact No</th>
                                 <th data-priority="3">Department</th>
                                 <th data-priority="4">Actions</th>
                             </tr>
@@ -41,6 +42,7 @@
                             <tr>
                                 <td>{{ $student->StudentName }}</td>
                                 <td>{{ $student->email }}</td>
+                                <td>{{ $student->contact_no }}</td>
                                 <td>{{ $student->department_name }}</td>
                                 <td>
 
