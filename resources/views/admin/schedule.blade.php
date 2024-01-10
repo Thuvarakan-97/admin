@@ -12,8 +12,8 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
             <li class="breadcrumb-item"><a href="javascript:void(0);">Schedule</a></li>
-			<!-- Log on to codeastro.com for more projects! -->
- 
+
+
 
         </ol>
     </div>
@@ -31,12 +31,12 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-				<!-- Log on to codeastro.com for more projects! -->
+
 
                     <div class="table-rep-plugin">
                         <div class="table-responsive mb-0" data-pattern="priority-columns">
                             <table id="datatable-buttons" class="table table-hover table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                        
+
                             <thead class="thead-dark">
                                     <tr>
                                         <th data-priority="1">#</th>
@@ -44,7 +44,7 @@
                                         <th data-priority="3">Time In</th>
                                         <th data-priority="4">Time Out</th>
                                         <th data-priority="5">Actions</th>
-                                     
+
 
                                     </tr>
                                 </thead>
@@ -70,7 +70,7 @@
 
 
                                 </tbody>
-								<!-- Log on to codeastro.com for more projects! -->
+								
                             </table>
                         </div>
                     </div>

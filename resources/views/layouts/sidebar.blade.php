@@ -3,7 +3,7 @@
                 <div class="slimscroll-menu" id="remove-scroll">
 
                     <!--- Sidemenu -->
-					<!-- Log on to codeastro.com for more projects! -->
+
                     <div id="sidebar-menu">
 
                         <!-- Left Menu Start -->
@@ -84,7 +84,7 @@
                             </li>
 
                         </ul>
-						<!-- Log on to codeastro.com for more projects! -->
+						
                     </div>
                     <!-- Sidebar -->
                     <div class="clearfix"></div>

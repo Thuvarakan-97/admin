@@ -13,7 +13,7 @@
 
 
             <div class="modal-body">
-			<!-- Log on to codeastro.com for more projects! -->
+
 
                 <div class="card-body text-left">
 

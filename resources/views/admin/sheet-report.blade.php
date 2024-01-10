@@ -14,7 +14,7 @@
                             <th>Student</th>
                             <th>Position</th>
                             <!-- <th>ID</th> -->
-							<!-- Log on to codeastro.com for more projects! -->
+
                             @php
                                 $today = today();
                                 $dates = [];
@@ -52,7 +52,6 @@
                                 <td>{{ $employee->name }}</td>
                                 <td>{{ $employee->position }}</td>
                                 <!-- <td>{{ $employee->id }}</td> -->
-								<!-- Log on to codeastro.com for more projects! -->
 
 
 
@@ -119,7 +118,7 @@
 
 
                     </tbody>
-					<!-- Log on to codeastro.com for more projects! -->
+					
 
 
                 </table>

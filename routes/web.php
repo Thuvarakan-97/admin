@@ -78,7 +78,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 
 Route::get('/students/{id}', [StudentController::class, 'show']);
-Route::resource('students', StudentController::class);
+// Route::resource('students', StudentController::class);
 Route::get('/students', [StudentController::class, 'index'])->name('students.index');
 Route::get('/students/{student}', [StudentController::class, 'show'])->name('students.view');
 
